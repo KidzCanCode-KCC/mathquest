@@ -1,0 +1,123 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #9be7ff, #d8b6ff);
+  color: #333;
+  text-align: center;
+}
+
+header, h2, p {
+  margin: 1rem;
+}
+
+.login-card, .profile-card, .pet-card, .card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+input, button, select {
+  width: 80%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  cursor: pointer;
+  background: #6a5acd;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background: #5a4ebc;
+}
+
+.google-btn {
+  background: #4285f4;
+}
+
+.google-btn:hover {
+  background: #357ae8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.card.easy {
+  background: linear-gradient(to top, #a8f0c6, #d6f7e1);
+}
+
+.card.medium {
+  background: linear-gradient(to top, #f7d6f7, #e9b4f4);
+}
+
+.card.boss {
+  background: linear-gradient(to top, #f7c1c1, #f49e9e);
+}
+
+.profile-card .badge {
+  background: #6a5acd;
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 999px;
+  display: inline-block;
+  margin: 0.5rem 0;
+}
+
+.xp-bar {
+  background: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0.5rem auto;
+  width: 80%;
+}
+
+.xp-bar::after {
+  content: '';
+  display: block;
+  height: 10px;
+  background: #6a5acd;
+  width: 10%;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.stats div {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.5rem;
+  flex: 1 0 40%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.rarity {
+  display: inline-block;
+  background: #eee;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
